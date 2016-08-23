@@ -296,6 +296,9 @@ To loop over a sequence in reverse, first specify the sequence in a forward dire
 3
 1
 
+equivalent to:  for i in range(len(lst)-1,-1,-1):
+
+
 #To loop over a sequence in sorted order, use the sorted() function which returns a new sorted list while leaving the source unaltered.
 
 >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
