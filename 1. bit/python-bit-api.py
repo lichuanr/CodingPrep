@@ -16,7 +16,8 @@ print "Line 3 - Value of c is ", c
 
 #It is unary and has the effect of 'flipping' bits.
 c = ~a;           # -61 = 1100 0011
-print "Line 4 - Value of c is ", c
+print "Line 4 - Value of c is ", c 
+Notes: ~n = -n - 1
 
 #The left operands value is moved left by the number of bits specified by the right operand.	
 c = a << 2;       # 240 = 1111 0000
