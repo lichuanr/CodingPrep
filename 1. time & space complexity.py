@@ -104,3 +104,5 @@ Containment   | x in/not in str1 | O(KN)        | pattern matching
 Copy          | str1.copy()      | O(N)         | Same as str1[:] which is O(N)
 Reverse       | str1[::-1]       | O(N)         | no built-in api so use extended slice
 Iteration     | for c in s:      | O(N)         |
+Upper/Lower   | str1.upper()     | O(N)         |
+replace	      | s1.replace(s2,s3)| O(KN)        |
