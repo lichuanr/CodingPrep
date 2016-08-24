@@ -64,6 +64,28 @@ allows for faster operations.
 Frozen sets support all operations that do not mutate the data structure (and
 with the same complexity classes).
 
+Strings:
+                               	   Complexity
+Operation     | Example          | Class        | Notes
+--------------+--------------+---------------+-------------------------------
+concatenate   | str1.join(str2)  | O(N+M)       |
+Store         | str1[i] = 0      | O(1)         |
+Length        | len(str1)        | O(1)         |
+Slice         | str1[a:b]        | O(b-a)       | simply copy the chars into new string
+              | str1.lstrip(sub) | O(N)         | 
+              | str1.rstrip(sub) | O(N)         | 
+              | str1.strip(sub)  | O(N)         | 
+split         | str1.split(delim)| O(KN)        | K is the length of delim
+Construction  | str(...)         | O(len(...))  | depends on length of ...
+check ==, !=  | str1 == str2     | O(N)         |
+count         | str1.count(sub)  | O(KN)        | pattern matching
+Containment   | x in/not in str1 | O(KN)        | pattern matching
+Copy          | str1.copy()      | O(N)         | Same as str1[:] which is O(N)
+Reverse       | str1[::-1]       | O(N)         | no built-in api so use extended slice
+Iteration     | for c in s:      | O(N)         |
+Upper/Lower   | str1.upper()     | O(N)         |
+replace	      | s1.replace(s2,s3)| O(KN)        |
+
 
 Heap -> min-heap in this case
 
@@ -82,7 +104,6 @@ heapsort      | heapsort                          | O(nlog n)        |
 Construction  | dict(...)    | O(len(...))   | depends # (key,value) 2-tuples
 
 Iteration     | for k in d:  | O(N)          | all forms: keys, values, items
-
 
 
 Dictionaries: dict and defaultdict
@@ -114,13 +135,6 @@ Access        | ---          | O(n)          |
 Search        | ---          | O(n)          |
 Insert        | ---          | O(1)          |
 Delete        | ---          | O(1)          |
-
-
-
-
-
-
-
 
 
 
