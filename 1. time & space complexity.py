@@ -31,6 +31,7 @@ Multiply      | k*l          | O(k N)       | 5*l is O(N): len(l)*l is O(N**2)
 Tuples support all operations that do not mutate the data structure (and with
 the same complexity classes).
 
+Stack & Queue are similar to the list.
 
 Sets:
                                Complexity
@@ -64,6 +65,26 @@ Frozen sets support all operations that do not mutate the data structure (and
 with the same complexity classes).
 
 
+Heap -> min-heap in this case
+
+Operation     | Example                           | Class            | Notes
+--------------+-----------------------------------+------------------+-------------------------------
+find-min	  | h[0]                              | O(1)             |
+merge         | merged = [item for item in merge(heap1, heap2)]| O(n)|
+build heap    | ---------                         | O(n)             |   
+replace       | heapq.heapreplace(heap, item)     | O(log n)         | heapq.heappushpop(heap, item)
+Delete        | h.remove(5)                       | O(log n)         |
+insert        | heappush(ll, 99)                  | O(log n)         |
+heapsort      | heapsort                          | O(nlog n)        | 
+
+
+
+Construction  | dict(...)    | O(len(...))   | depends # (key,value) 2-tuples
+
+Iteration     | for k in d:  | O(N)          | all forms: keys, values, items
+
+
+
 Dictionaries: dict and defaultdict
                                Complexity
 Operation     | Example      | Class         | Notes
@@ -83,3 +104,23 @@ Construction  | dict(...)    | O(len(...))   | depends # (key,value) 2-tuples
 Iteration     | for k in d:  | O(N)          | all forms: keys, values, items
 
 So, most dict operations are O(1).
+
+
+linked list 
+			ion	
+Operation     | Example      | Class         | Notes
+--------------+--------------+---------------+-------------------------------
+Access        | ---          | O(n)          |
+Search        | ---          | O(n)          |
+Insert        | ---          | O(1)          |
+Delete        | ---          | O(1)          |
+
+
+
+
+
+
+
+
+
+
