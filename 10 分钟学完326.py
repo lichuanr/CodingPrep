@@ -1,4 +1,4 @@
-"""
+
 #lecture 1
 print 'he' * 3
 import math
@@ -493,7 +493,6 @@ result = time + time1
 result = 1 + time 
 print result
 
-"""
 #Lecture 17
 two = 2
 print type(two), type(type(two)), type(two).__bases__
